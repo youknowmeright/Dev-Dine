@@ -6,6 +6,7 @@
     {
         display: flex;
         flex-direction: column;
+        padding-left: 10px;
     }
     .navbar-logo
     {
@@ -26,6 +27,54 @@
         width: 100%;
     }
 
+    .order1
+    {
+        margin-left: 70px;
+    }
+    .order2
+    {
+        margin-top: 35px;
+    }
+    .order-button
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .header-image2
+    {
+        margin: 0px 0px;
+        padding: 0px 0px; 
+        display: flex;
+        flex-direction: column;  
+    }
+    .header-image img
+    {
+        margin: 0px 0px;
+        padding: 0px 0px;  
+     
+    
+    }
+    .header-image{
+        padding-left: 20px;
+
+    }
+
+    .order-info button
+    {
+        padding: 0px 0px;
+        margin: 0px 0px;
+        margin-left: 20px;
+    }
+    .order-right
+    {
+        padding-left: 0px;
+    }
+    .order-des
+    {
+        padding: 40px;
+    }
+
 
     /*menu title left*/
 
@@ -35,6 +84,7 @@
     }
 .order-des h1{
     font-size: 20px;
+    padding-left: 50px;
 
 }
 
@@ -44,6 +94,7 @@
         width: 200px; 
         white-space: normal;
         word-wrap: break-word;
+        padding-left: 30px;
     
     
 }
@@ -54,13 +105,13 @@
 
 /*menu title right*/
 
-.header-image2{
+/* .header-image2{
   
     display: flex;
     flex-direction: column;
     margin-left: 95px;
 
-}
+} */
 
 .header-image h3
 {
@@ -86,29 +137,103 @@
 .contact
 {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
 
 
 .working-hour{
     margin: 0px 0px;
-    padding-left: 105px;
+    
     padding-top: 70px;
 
-}
+    padding-right: 50px;
 
+}
 .working-hour2{
     margin: 0px 0px;
-    padding-left: 145px;
-    padding-top: 15px;
-}
+    
+    padding-top: 70px;
 
+    padding-right: 50px;
+
+}
 .working-hour3{
     margin: 0px 0px;
-    padding-left: 100px;
-    padding-top: 10px;
+    
+    padding-top: 70px;
+
+    padding-right: 50px;
+
 }
+
+
+
+
+.hour-pic
+{
+    padding-left: 25px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+
+
+
+
+.working-hour h4
+{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 40px;
+    padding-right: 0px;
+    
+    /*code not working*/   
+}
+
+.working-hour p{
+    width: fit-content;
+    margin-left: 0px;
+    padding-left:75px ;
+}
+.working-hour2 img
+{
+    padding-left: 65px;
+}
+.working-hour3 img
+{
+    padding-left: 15px;
+}
+.working-hour2 h4
+{
+    width: fit-content;
+    padding-left: 60px;
+}
+.working-hour2 p{
+    width: fit-content;
+    margin-left: 0px;
+    padding-left:100px ;
+}
+.working-hour3 h4
+{
+    width: fit-content;
+    padding-left: 30px;
+}
+.working-hour3 p{
+    width: fit-content;
+    margin-left: 0px;
+    padding-left:75px ;
+}
+.title
+{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    width: fit-content;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
 
 /*contact section ends */
 /*"populars" item start*/
@@ -126,7 +251,7 @@
 {
     margin: 0px 0px;
     padding: 0px 0px;
-    padding-left: 70px;
+    padding-left: 18px;
 
 }
 
@@ -157,6 +282,13 @@
 }
 
 /*food-info-title*/
+.food-info
+{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 .food-info-title
 {
     padding-top: 0px;
@@ -170,9 +302,14 @@
         width: 200px; /* Adjust the width as needed */
         white-space: normal;
         word-wrap: break-word;
-        padding-left: 90px;
+        padding-left: 35px;
     
     
+}
+.food-info-title h5
+{
+    width:max-content;
+    padding-left: 115px;
 }
 
 /*food info title */
@@ -191,8 +328,8 @@
 
 .button
 {
-    padding-left: 30px;
-    margin-left: 65px;
+    padding-left:0 px;
+    margin-left: 25px;
     padding-top: 0px;
 }
 
@@ -208,7 +345,7 @@
 {
     padding: 0px 0px;
     margin: 0px 0px;
-    padding-left: 58px;
+    padding-left: 18px;
     padding-top: 25px;
     width: fit-content;
 }
@@ -231,7 +368,7 @@
             margin: 0px 0px;
             
             padding-right: 150px;
-            margin-left: 70px;
+            margin-left: 30px;
             padding-top: 10px;
         }
 
@@ -261,7 +398,7 @@
 
         .testimonial-image img {
             width: 150px;
-            padding-left: 95px;
+            padding-left: 55px;
             padding-top: 50px;
         }
 
@@ -359,6 +496,7 @@
         padding-right: 10px;
         width: 70%;
         margin-top: 18px;
+        margin-right: 10px;
     }
 
 
