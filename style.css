@@ -172,13 +172,14 @@ input:focus {
     gap: 0px; 
   justify-content: space-between;
     padding: 0;  
+    padding-right: 70px;
    
 } 
 
 
 .header-image2
 {
-    padding-right: 10px;
+    
     padding-top: 50px;
     gap: 20px;
 }
