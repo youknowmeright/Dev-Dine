@@ -79,8 +79,8 @@ input:focus {
     right: 0;
     border: none;
     position:relative;
-    border-left: 1px solid rgba(0, 0, 0, 0.071);
-    border-color: transparent;
+    border-left: 1px solid rgba(0, 0, 0, 0.097);
+    
 
 }
 
@@ -300,7 +300,6 @@ input:focus {
 .working-hour
 {
     margin-left: 190px;
-    
     margin-top: 190px;
     font-size: 18px;
     border-right: 1px solid rgba(57, 48, 48, 0.227);   
@@ -311,9 +310,14 @@ input:focus {
 {
     margin-left: 88px;
 }
+.working-hour h4
+{
+    margin-right: 30px;
+}
 .working-hour p
 {
     margin-left: 50px;
+    margin-right: 10px;
 }
 /* working hour 2*/
 
@@ -328,11 +332,11 @@ input:focus {
 }
 .working-hour2 img
 {
-    margin-left: 48px;
+    margin-left: 40px;
 }
 .working-hour2 p
 {
-    margin-left: 40px;
+    margin-left: 38px;
 }
 
 .hour-pic
