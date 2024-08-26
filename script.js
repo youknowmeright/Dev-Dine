@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
-    let showingMore = false; 
+    let showingMore = false; // Track if showing more products
 
     function renderProducts(startIndex, endIndex) {
         const popularsSection = document.querySelector('.populars');
@@ -116,23 +116,23 @@ document.addEventListener('DOMContentLoaded', () => {
         const showMoreButton = document.querySelector('.show-more-buton');
 
         if (!showingMore) {
-            
+            // Show all 12 products
             renderProducts(0, products.length);
             showMoreButton.textContent = 'See Less Products';
         } else {
-            
+            // Show only the first 6 products
             renderProducts(0, 6);
             showMoreButton.textContent = 'See More Products';
         }
 
-    
+        // Toggle the state
         showingMore = !showingMore;
     }
 
-    
+    // Initial display of the first 6 products
     renderProducts(0, 6);
 
-    
+    // Add event listener to the "See More Products" button
     const showMoreButton = document.querySelector('.show-more-buton');
     showMoreButton.addEventListener('click', toggleProducts);
 });
