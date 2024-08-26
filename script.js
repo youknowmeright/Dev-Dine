@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="popular-items">
                     <div class="popular-item">
                         <div>
-                            <img class="popular-image" src="${product.image}" alt="${product.title}">
+                            <img class="popular-image" src="${product.image}" alt="${product.title}" class="src">
                         </div>
                         <div class="popular-item-des">
                             <div class="popular-item-des-left">
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const showMoreButton = document.querySelector('.show-more-buton');
 
         if (!showingMore) {
-            // Show all 12 products
+            // Show all products
             renderProducts(0, products.length);
             showMoreButton.textContent = 'See Less Products';
         } else {
@@ -135,4 +135,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add event listener to the "See More Products" button
     const showMoreButton = document.querySelector('.show-more-buton');
     showMoreButton.addEventListener('click', toggleProducts);
+
+    // Additional code sections:
+
+    // Hover buttons
+    const buttons = document.querySelectorAll('.button');
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            buttons.forEach(btn => btn.classList.remove('active')); // Remove active class from all buttons
+            button.classList.add('active'); // Add active class to the clicked button
+        });
+    });
+
+    // Email subscription
+    document.getElementById('subscribe-button').addEventListener('click', function() {
+        const emailInput = document.getElementById('email-input').value.trim(); // Trim whitespace
+        const errorMessage = document.getElementById('error-message');
+
+        if (emailInput === '') {
+            errorMessage.classList.remove('hidden'); // Show error message
+            errorMessage.textContent = "Enter your email"; // Ensure error message is set
+        } else {
+            errorMessage.classList.add('hidden'); // Hide error message
+            alert('Subscribed successfully!');
+            // Additional actions, e.g., sending email to a server, can be added here.
+        }
+    });
 });
